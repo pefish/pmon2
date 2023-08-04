@@ -11,13 +11,11 @@ func Conf(confFile string) (*conf.Tpl, error) {
 	d, err := os.ReadFile(confFile)
 	if err != nil {
 		if os.IsNotExist(err) {
-			err := os.WriteFile(confFile, []byte(`
-data: "/etc/pmon2/data"
-logs: "/var/log/pmon2/"
-`), 0777)
-			if err != nil {
-				return nil, errors.WithStack(err)
-			}
+			return &conf.Tpl{
+				Data: "/etc/pmon2/data",
+				Logs: "/var/log/pmon2/",
+				Conf: "",
+			}, nil
 		} else {
 			return nil, errors.WithStack(err)
 		}
