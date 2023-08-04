@@ -28,6 +28,7 @@ Go官方一直没有提供任何进程管理工具，对于 `Go` 服务的部署
 go install github.com/pefish/pmon2/cmd/...@latest
 ```
 
+
 目前 `Pmon2` 支持 `CentOS6`、`CentOS7`、`CentOS8`
 
 [Releases](https://github.com/pefish/pmon2/releases) 中已经构建了可以直接安装的`rpm`包，可直接选择平台安装： 
