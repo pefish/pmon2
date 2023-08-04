@@ -4,13 +4,23 @@ import (
 	"github.com/ntt360/errors"
 	"github.com/ntt360/pmon2/app/conf"
 	"gopkg.in/yaml.v2"
-	"io/ioutil"
+	"os"
 )
 
 func Conf(confFile string) (*conf.Tpl, error) {
-	d, err := ioutil.ReadFile(confFile)
+	d, err := os.ReadFile(confFile)
 	if err != nil {
-		return nil, errors.WithStack(err)
+		if os.IsNotExist(err) {
+			err := os.WriteFile(confFile, []byte(`
+data: "/etc/pmon2/data"
+logs: "/var/log/pmon2/"
+`), 0777)
+			if err != nil {
+				return nil, errors.WithStack(err)
+			}
+		} else {
+			return nil, errors.WithStack(err)
+		}
 	}
 
 	var c conf.Tpl
@@ -20,6 +30,6 @@ func Conf(confFile string) (*conf.Tpl, error) {
 	}
 
 	c.Conf = confFile
-	
-	return &c,nil
+
+	return &c, nil
 }
