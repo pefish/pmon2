@@ -22,19 +22,25 @@ Go官方一直没有提供任何进程管理工具，对于 `Go` 服务的部署
 
 ## 如何安装
 
+任意平台都可以选择以下方式安装：
+
+```bash
+go install github.com/pefish/pmon2/cmd/...@latest
+```
+
 目前 `Pmon2` 支持 `CentOS6`、`CentOS7`、`CentOS8`
 
-[Releases](https://github.com/ntt360/pmon2/releases) 中已经构建了可以直接安装的`rpm`包，可直接选择平台安装： 
+[Releases](https://github.com/pefish/pmon2/releases) 中已经构建了可以直接安装的`rpm`包，可直接选择平台安装： 
 
 ```bash
 # CentOS6
-sudo yum install -y https://github.com/ntt360/pmon2/releases/download/v1.12.0/pmon2-1.12.1-1.el6.x86_64.rpm
+sudo yum install -y https://github.com/pefish/pmon2/releases/download/v1.12.0/pmon2-1.12.1-1.el6.x86_64.rpm
 
 # CentOS7
-sudo yum install -y https://github.com/ntt360/pmon2/releases/download/v1.12.0/pmon2-1.12.1-1.el7.x86_64.rpm
+sudo yum install -y https://github.com/pefish/pmon2/releases/download/v1.12.0/pmon2-1.12.1-1.el7.x86_64.rpm
 
 # CentOS8
-sudo yum install -y https://github.com/ntt360/pmon2/releases/download/v1.12.0/pmon2-1.12.1-1.el8.x86_64.rpm
+sudo yum install -y https://github.com/pefish/pmon2/releases/download/v1.12.0/pmon2-1.12.1-1.el8.x86_64.rpm
 ```
 
 :exclamation::exclamation: **注意：** :exclamation::exclamation:

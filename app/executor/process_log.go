@@ -2,7 +2,7 @@ package executor
 
 import (
 	"github.com/ntt360/errors"
-	"github.com/ntt360/pmon2/app"
+	"github.com/pefish/pmon2/app"
 	"os"
 	"strings"
 	"syscall"

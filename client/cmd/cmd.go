@@ -2,21 +2,20 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/ntt360/pmon2/app/conf"
-	"github.com/ntt360/pmon2/client/cmd/completion"
-	"github.com/ntt360/pmon2/client/cmd/del"
-	"github.com/ntt360/pmon2/client/cmd/desc"
-	"github.com/ntt360/pmon2/client/cmd/exec"
-	"github.com/ntt360/pmon2/client/cmd/list"
-	"github.com/ntt360/pmon2/client/cmd/log"
-	"github.com/ntt360/pmon2/client/cmd/logf"
-	"github.com/ntt360/pmon2/client/cmd/reload"
-	"github.com/ntt360/pmon2/client/cmd/restart"
-	"github.com/ntt360/pmon2/client/cmd/start"
-	"github.com/ntt360/pmon2/client/cmd/stop"
+	"github.com/pefish/pmon2/app/conf"
+	"github.com/pefish/pmon2/client/cmd/completion"
+	"github.com/pefish/pmon2/client/cmd/del"
+	"github.com/pefish/pmon2/client/cmd/desc"
+	"github.com/pefish/pmon2/client/cmd/exec"
+	"github.com/pefish/pmon2/client/cmd/list"
+	"github.com/pefish/pmon2/client/cmd/log"
+	"github.com/pefish/pmon2/client/cmd/logf"
+	"github.com/pefish/pmon2/client/cmd/reload"
+	"github.com/pefish/pmon2/client/cmd/restart"
+	"github.com/pefish/pmon2/client/cmd/start"
+	"github.com/pefish/pmon2/client/cmd/stop"
 	"github.com/spf13/cobra"
 )
-
 
 var rootCmd = &cobra.Command{
 	Use:   "pmon2",

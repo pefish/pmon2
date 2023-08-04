@@ -2,7 +2,7 @@ package service
 
 import (
 	"fmt"
-	"github.com/ntt360/pmon2/app/model"
+	"github.com/pefish/pmon2/app/model"
 	"os"
 	"time"
 )

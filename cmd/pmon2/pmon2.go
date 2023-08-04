@@ -1,12 +1,11 @@
 package main
 
 import (
-	"github.com/ntt360/pmon2/app"
-	"github.com/ntt360/pmon2/app/conf"
-	"github.com/ntt360/pmon2/client/cmd"
+	"github.com/pefish/pmon2/app"
+	"github.com/pefish/pmon2/app/conf"
+	"github.com/pefish/pmon2/client/cmd"
 	"log"
 )
-
 
 func main() {
 	conf := conf.GetDefaultConf()

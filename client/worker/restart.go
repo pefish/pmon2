@@ -3,10 +3,10 @@ package worker
 import (
 	"errors"
 	"fmt"
-	"github.com/ntt360/pmon2/app"
-	"github.com/ntt360/pmon2/app/executor"
-	"github.com/ntt360/pmon2/app/model"
-	"github.com/ntt360/pmon2/client/service"
+	"github.com/pefish/pmon2/app"
+	"github.com/pefish/pmon2/app/executor"
+	"github.com/pefish/pmon2/app/model"
+	"github.com/pefish/pmon2/client/service"
 	"time"
 )
 

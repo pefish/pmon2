@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/ntt360/pmon2/app"
-	"github.com/ntt360/pmon2/app/conf"
-	"github.com/ntt360/pmon2/app/god"
+	"github.com/pefish/pmon2/app"
+	"github.com/pefish/pmon2/app/conf"
+	"github.com/pefish/pmon2/app/god"
 	"log"
 )
 

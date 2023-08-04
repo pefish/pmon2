@@ -2,8 +2,8 @@ package executor
 
 import (
 	"github.com/ntt360/errors"
-	"github.com/ntt360/pmon2/app/model"
-	"github.com/ntt360/pmon2/app/utils/crypto"
+	"github.com/pefish/pmon2/app/model"
+	"github.com/pefish/pmon2/app/utils/crypto"
 	"os"
 	"os/user"
 	"strconv"

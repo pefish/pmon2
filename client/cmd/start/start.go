@@ -2,10 +2,10 @@ package start
 
 import (
 	"fmt"
-	"github.com/ntt360/pmon2/app"
-	"github.com/ntt360/pmon2/app/model"
-	"github.com/ntt360/pmon2/app/output"
-	"github.com/ntt360/pmon2/app/svc/process"
+	"github.com/pefish/pmon2/app"
+	"github.com/pefish/pmon2/app/model"
+	"github.com/pefish/pmon2/app/output"
+	"github.com/pefish/pmon2/app/svc/process"
 	"github.com/spf13/cobra"
 	"os"
 )

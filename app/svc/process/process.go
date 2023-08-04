@@ -3,9 +3,9 @@ package process
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ntt360/pmon2/app"
-	"github.com/ntt360/pmon2/app/model"
-	"github.com/ntt360/pmon2/client/proxy"
+	"github.com/pefish/pmon2/app"
+	"github.com/pefish/pmon2/app/model"
+	"github.com/pefish/pmon2/client/proxy"
 	"os"
 	"os/exec"
 	"strconv"

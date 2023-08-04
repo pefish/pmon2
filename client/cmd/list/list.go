@@ -1,16 +1,16 @@
 package list
 
 import (
-	"github.com/ntt360/pmon2/app"
-	"github.com/ntt360/pmon2/app/model"
-	"github.com/ntt360/pmon2/app/output"
+	"github.com/pefish/pmon2/app"
+	"github.com/pefish/pmon2/app/model"
+	"github.com/pefish/pmon2/app/output"
 	"github.com/spf13/cobra"
 )
 
 var Cmd = &cobra.Command{
-	Use:                        "ls",
-	Aliases:                    []string{"list"},
-	Short:                      "list all processes",
+	Use:     "ls",
+	Aliases: []string{"list"},
+	Short:   "list all processes",
 	Run: func(cmd *cobra.Command, args []string) {
 		runCmd(nil)
 	},
